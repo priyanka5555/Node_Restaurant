@@ -1,9 +1,11 @@
 //  responsible to build connection between db and nodejs
 
 const mongoose = require('mongoose'); //act as a bridge
+require('dotenv').config();
 
 //Define the MongoDB connecction URL
-const mongoURL = "mongodb://localhost:27017/resturants"  //resturants is my db
+//const mongoURL = process.env.MONGODB_URL_LOCAL;
+const mongoURL = process.env.MONGODB_URL;
 
 //set up MongoDB connection
 mongoose.connect(mongoURL,{
@@ -12,7 +14,7 @@ mongoose.connect(mongoURL,{
 })
 
 //Get the default connection
-//Mongoose manintains a default connection object representing thr MongoDB connection
+//Mongoose manintains a default connection object representing the MongoDB connection
 
 const db = mongoose.connection;    //db is an object
 
