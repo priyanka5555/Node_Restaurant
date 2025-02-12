@@ -1,7 +1,9 @@
 const express = require('express')
 const router = express.Router();   //manages routes or different different endpoints
 
-const Person = require('../models/person')
+
+const Person = require('./../models/person')
+
 
 
 //req - isme voh data hota hai jo client server ko bhejta hai. It could be in any format Json, form data, etc but mostly we send it in JSON 
@@ -97,7 +99,7 @@ router.put('/:id', async (req, res) => {
   }
 })
 
-//---------update person info---------------------
+//---------delete person info---------------------
 router.delete('/:id', async(req,res) => {
     try{
       const personID = req.params.id;   //Extract person's id from the url parameter

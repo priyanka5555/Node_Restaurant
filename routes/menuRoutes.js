@@ -2,7 +2,7 @@ const express = require('express')
 const router = express.Router();   //manages routes or different different endpoints
 
 const MenuItem = require('./../models/MenuItem');
-const menuItem = require('./../models/MenuItem');
+
 
 router.post('/',async (req,res) =>{
 
