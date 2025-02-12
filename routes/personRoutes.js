@@ -2,7 +2,7 @@ const express = require('express')
 const router = express.Router();   //manages routes or different different endpoints
 
 
-const Person = require('./../models/person')
+const Person = require('./../models/Person')
 
 
 

@@ -1,7 +1,7 @@
 const mongoose = require('mongoose')
 
 //Define person schema
-const personSchema = new mongoose.Schema({
+const PersonSchema = new mongoose.Schema({
     name: {
         type: String,
         required: true
@@ -35,5 +35,6 @@ const personSchema = new mongoose.Schema({
 //With the help of this schema now we will create modules
 
 //create Person Model
-const Person = mongoose.model('Person',personSchema);
+const Person = mongoose.model('Person',PersonSchema);
 module.exports = Person
+
