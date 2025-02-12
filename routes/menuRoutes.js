@@ -66,7 +66,7 @@ router.get('/:taste', async(req,res)=> {
     
 })
 
-//---------update menu info---------------------
+//---------update menu info---------------------------
 router.put('/:id', async (req, res) => {
     try {
       const menuId = req.params.id;  //Extract person's id from the url parameter
